@@ -33,25 +33,25 @@ export const storyData = {
         step: "01",
         title: "Class Fun & Memories",
         desc: "Laughter between lectures, teasing, and memories right in front of the board.",
-        image: "/images/classroom-together.png"
+        image: "./images/classroom-together.png"
       },
       {
         step: "02",
         title: "Friendship",
         desc: "Beyond study notes, talking about everything and nothing.",
-        image: "/images/bus-mirror.jpg"
+        image: "./images/bus-mirror.jpg"
       },
       {
         step: "03",
         title: "More Conversations",
         desc: "Conversations that naturally carried past college hours.",
-        image: "/images/chat-padips.jpg"
+        image: "./images/chat-padips.jpg"
       },
       {
         step: "04",
         title: "More Memories",
         desc: "Realizing you had quietly become someone irreplaceable.",
-        image: "/images/selvi-smile.jpg"
+        image: "./images/selvi-smile.jpg"
       }
     ]
   },
@@ -67,35 +67,35 @@ export const storyData = {
         tag: "Memory 01",
         title: "That Food",
         text: "One day nee enakku food kondu vandhu kudutha.\n\nAdhu romba simple-aana moment dhaan...\nbut somehow, I still remember it.",
-        image: "/images/chat-food.jpg"
+        image: "./images/chat-food.jpg"
       },
       {
         id: 2,
         tag: "Memory 02",
         title: "The Spiral & Ice Cream",
         text: "Apparam nee enakku spiral pottu kudutha.\n\nSmall thing...\nbut it became another little memory.",
-        image: "/images/chat-icecream.jpg"
+        image: "./images/chat-icecream.jpg"
       },
       {
         id: 3,
         tag: "Memory 03",
         title: "The Birthday Frame",
         text: "A special digital frame with roses & memories crafted for Kalaiselvi.\n\nPerusa edhuvum illa...\nbut somehow those small things became special memories.",
-        image: "/images/birthday-frame-hd.png"
+        image: "./images/birthday-frame-hd.png"
       },
       {
         id: 4,
         tag: "Memory 04",
         title: "Just 'Selvi'",
         text: "“Kalaiselvi... Selvi...”\n\nThe way a name is called with care turns an ordinary word into pure affection.",
-        image: "/images/chat-name.jpg"
+        image: "./images/chat-name.jpg"
       },
       {
         id: 5,
         tag: "Memory 05",
         title: "Handwritten With Love",
         text: "Kalai's handwritten card marking June 24 on the calendar.\n\nPenned down with pure sincerity that digital words can never match.",
-        image: "/images/kalai-letter.jpg"
+        image: "./images/kalai-letter.jpg"
       }
     ]
   },
@@ -222,7 +222,7 @@ export const storyData = {
       "Whatever this bond becomes, I hope it always stays special. ❤️"
     ],
     signOff: "— Yuvan",
-    handwrittenImage: "/images/kalai-letter.jpg",
+    handwrittenImage: "./images/kalai-letter.jpg",
     handwrittenTitle: "Kalai's Handwritten Wish & June 24 Memory",
     handwrittenNote: "The special card with the handwritten wish and June 24 marked on the calendar."
   },
