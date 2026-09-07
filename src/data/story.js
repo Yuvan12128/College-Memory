@@ -9,14 +9,14 @@
 export const storyData = {
   // Names
   herName: "Kalaiselvi", // Her name
-  herNick: "Kalai",      // Nickname / short name
+  herNick: "Angel",      // Nickname / short name
   myName: "Yuvan",        // Your name
 
   // 01 — OPENING
   opening: {
     smallText: "A little something I wanted you to see.",
     mainHeading: "Some memories deserve\na place of their own.",
-    subheading: "This is not a love story.\nIt's simply a story about someone\nwho became very special to me.",
+    subheading: "The story of a person\nwho became very special to me.",
     buttonText: "Begin Our Story →"
   },
 
@@ -72,8 +72,8 @@ export const storyData = {
       {
         id: 2,
         tag: "Memory 02",
-        title: "The Spiral & Ice Cream",
-        text: "Apparam nee enakku spiral pottu kudutha.\n\nSmall thing...\nbut it became another little memory.",
+        title: "Ice Cream",
+        text: "Small thing...\nbut it became another little memory.",
         image: "./images/chat-icecream.jpg"
       },
       {
@@ -93,7 +93,7 @@ export const storyData = {
       {
         id: 5,
         tag: "Memory 05",
-        title: "Handwritten With Love",
+        title: "Handwritten Card",
         text: "Kalai's handwritten card marking June 24 on the calendar.\n\nPenned down with pure sincerity that digital words can never match.",
         image: "./images/kalai-letter.jpg"
       }
