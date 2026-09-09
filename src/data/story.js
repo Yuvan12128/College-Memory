@@ -73,7 +73,7 @@ export const storyData = {
         id: 2,
         tag: "Memory 02",
         title: "That Food 🥣👩‍🍳",
-        text: "One Day, Namba Serbdhu Oupuma Senjom.\n\nAdhu romba simple-aana moment dhaan...\nbut somehow, I still remember it.",
+        text: "One Day, Namba Serndhu Opma Senjom.\n\nAdhu romba simple-aana moment dhaan...\nbut somehow, I still remember it.",
         image: "./images/chat-food.jpg"
       },
       {
@@ -87,7 +87,7 @@ export const storyData = {
         id: 4,
         tag: "Memory 04",
         title: "The Birthday Frame 🎂",
-        text: "A special digital frame with roses & memories crafted for Kalaiselvi.\n\nSomehow those small things became special memories.",
+        text: "A special digital frame with roses and memories, crafted for Kalaiselvi.\n\nSomehow those small things became special memories.",
         image: "./images/birthday-frame-hd.png"
       },
       {
@@ -101,7 +101,7 @@ export const storyData = {
         id: 6,
         tag: "Memory 06",
         title: "Handwritten Card 💌",
-        text: "Kalai's handwritten card marking June 24 on the calendar.\n\nPenned down with pure sincerity that digital words can never match.",
+        text: "Kalai's handwritten card marking June 24 on the calendar.\n\nWritten with a sincerity that digital words can never match.",
         image: "./images/kalai-letter.jpg"
       }
     ]
@@ -171,7 +171,7 @@ export const storyData = {
       {
         num: "02",
         title: "Your Simplicity 🕊️",
-        text: "Nee simple-ah dress pannikkuradhu enakku romba pidikkum with hair style."
+        text: "Nee simple-ah dress pannikkuradhu, un hair style-um enakku romba pidikkum."
       },
       {
         num: "03",
@@ -255,7 +255,7 @@ export const storyData = {
     line1: "Some people change your life without even realizing it.",
     line2: "You are one of those people.",
     line3: "I may not know what to call what we have...\n\nbut I know I'm grateful that I found you.",
-    finalLine: "❤️ Thank you for being part of my story.👋 Ta Ta . . . .",
+    finalLine: "❤️ Thank you for being part of my story.\n\n👋 \"Ta Ta\"... ",
     replayButton: "Replay Our Story ↻"
   }
 };
