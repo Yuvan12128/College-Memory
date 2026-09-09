@@ -1,89 +1,102 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+import harleysSong from '../assets/music/harleys-in-hawaii.mp3';
 
 export default function MusicPlayer() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
   const audioRef = useRef(null);
-  const audioCtxRef = useRef(null);
-  const synthIntervalRef = useRef(null);
+  const hasUserPausedRef = useRef(false);
 
-  // Soft romantic progression frequencies
-  const notes = [261.63, 329.63, 392.00, 523.25, 293.66, 369.99, 440.00, 587.33];
-  let noteIndex = 0;
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
 
-  const playSynthNote = (freq) => {
-    if (!audioCtxRef.current || isMuted) return;
-    try {
-      const ctx = audioCtxRef.current;
-      const osc = ctx.createOscillator();
-      const gain = ctx.createGain();
-      osc.type = 'sine';
-      osc.frequency.setValueAtTime(freq, ctx.currentTime);
-      gain.gain.setValueAtTime(0.001, ctx.currentTime);
-      gain.gain.exponentialRampToValueAtTime(0.04, ctx.currentTime + 0.08);
-      gain.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + 2.0);
-      osc.connect(gain);
-      gain.connect(ctx.destination);
-      osc.start();
-      osc.stop(ctx.currentTime + 2.1);
-    } catch (e) {
-      // AudioContext fallback
-    }
-  };
+    // Set sound volume to 30%
+    audio.volume = 0.3;
 
-  const startSynth = () => {
-    if (synthIntervalRef.current) clearInterval(synthIntervalRef.current);
-    synthIntervalRef.current = setInterval(() => {
-      const freq = notes[noteIndex % notes.length];
-      playSynthNote(freq);
-      noteIndex++;
-    }, 700);
-  };
+    const tryPlay = () => {
+      if (hasUserPausedRef.current) return;
+      audio
+        .play()
+        .then(() => {
+          setIsPlaying(true);
+          cleanupListeners();
+        })
+        .catch(() => {
+          // Autoplay policy prevented immediate playback, will play on first user interaction
+        });
+    };
 
-  const stopSynth = () => {
-    if (synthIntervalRef.current) {
-      clearInterval(synthIntervalRef.current);
-      synthIntervalRef.current = null;
-    }
-  };
+    // 1. Attempt automatic playback immediately on page open
+    tryPlay();
 
-  const togglePlay = () => {
-    if (!audioCtxRef.current) {
-      const AudioCtx = window.AudioContext || window.webkitAudioContext;
-      audioCtxRef.current = new AudioCtx();
-    }
-    if (audioCtxRef.current.state === 'suspended') {
-      audioCtxRef.current.resume();
-    }
+    // 2. If browser requires interaction first, start on the very first touch, click, scroll or key
+    const onUserInteraction = () => {
+      tryPlay();
+    };
+
+    const cleanupListeners = () => {
+      window.removeEventListener('click', onUserInteraction);
+      window.removeEventListener('touchstart', onUserInteraction);
+      window.removeEventListener('scroll', onUserInteraction);
+      window.removeEventListener('keydown', onUserInteraction);
+    };
+
+    window.addEventListener('click', onUserInteraction, { passive: true });
+    window.addEventListener('touchstart', onUserInteraction, { passive: true });
+    window.addEventListener('scroll', onUserInteraction, { passive: true });
+    window.addEventListener('keydown', onUserInteraction, { passive: true });
+
+    return () => {
+      cleanupListeners();
+    };
+  }, []);
+
+  const togglePlay = (e) => {
+    e.stopPropagation();
+    if (!audioRef.current) return;
 
     if (isPlaying) {
+      hasUserPausedRef.current = true;
+      audioRef.current.pause();
       setIsPlaying(false);
-      stopSynth();
-      if (audioRef.current) audioRef.current.pause();
     } else {
-      setIsPlaying(true);
-      if (audioRef.current && audioRef.current.currentSrc) {
-        audioRef.current.play().catch(() => {
-          startSynth();
+      hasUserPausedRef.current = false;
+      audioRef.current.volume = 0.3;
+      audioRef.current
+        .play()
+        .then(() => {
+          setIsPlaying(true);
+        })
+        .catch((err) => {
+          console.warn("Audio playback issue:", err);
         });
-      } else {
-        startSynth();
-      }
     }
   };
 
   const toggleMute = (e) => {
     e.stopPropagation();
-    setIsMuted(!isMuted);
     if (audioRef.current) {
-      audioRef.current.muted = !isMuted;
+      const nextMuted = !isMuted;
+      audioRef.current.muted = nextMuted;
+      if (!nextMuted) {
+        audioRef.current.volume = 0.3;
+      }
+      setIsMuted(nextMuted);
     }
   };
 
   return (
     <div className="audio-controller-widget" onClick={togglePlay} title="Toggle Background Music">
-      <audio ref={audioRef} loop preload="none">
-        <source src="/music/bgm.mp3" type="audio/mp3" />
+      <audio
+        ref={audioRef}
+        src={harleysSong}
+        loop
+        preload="auto"
+        onPlay={() => setIsPlaying(true)}
+        onPause={() => setIsPlaying(false)}
+      >
+        <source src={harleysSong} type="audio/mpeg" />
       </audio>
 
       <button className="audio-icon-btn" aria-label={isPlaying ? "Pause music" : "Play music"}>
@@ -91,8 +104,8 @@ export default function MusicPlayer() {
       </button>
 
       <div className="audio-meta">
-        <span className="audio-title">Soft Melody</span>
-        <span className="audio-sub">{isPlaying ? 'Playing softly' : 'Tap to play music'}</span>
+        <span className="audio-title">Harleys In Hawaii</span>
+        <span className="audio-sub">{isPlaying ? 'Playing softly (30%)' : 'Tap to play music'}</span>
       </div>
 
       <div className={`sound-bars ${isPlaying ? 'active' : ''}`}>
