@@ -255,7 +255,7 @@ export const storyData = {
     line1: "Some people change your life without even realizing it.",
     line2: "You are one of those people.",
     line3: "I may not know what to call what we have...\n\nbut I know I'm grateful that I found you.",
-    finalLine: "Thank you for being part of my story. ❤️  Ta Ta . . . . ",
+    finalLine: "❤️ Thank you for being part of my story. 👋 Ta Ta . . . .",
     replayButton: "Replay Our Story ↻"
   }
 };
