@@ -73,7 +73,7 @@ export const storyData = {
         id: 2,
         tag: "Memory 02",
         title: "That Food 🥣👩‍🍳",
-        text: "One day namba ouppuma senjom .\n\nAdhu romba simple-aana moment dhaan...\nbut somehow, I still remember it.",
+        text: "One Day, Namba Serbdhu Oupuma Senjom.\n\nAdhu romba simple-aana moment dhaan...\nbut somehow, I still remember it.",
         image: "./images/chat-food.jpg"
       },
       {
@@ -217,7 +217,7 @@ export const storyData = {
     title: "What Are We?",
     lines: [
       "Maybe we're just friends...",
-      "Maybe we're something more...",
+      "Maybe we're something a little more special...",
       "Maybe we don't need a name yet."
     ],
     doubt: "Honestly... I don't know the answer.",
@@ -231,7 +231,7 @@ export const storyData = {
     sectionNum: "08",
     teaser: "There's something I wanted to tell you.",
     buttonText: "Open This Letter 💌",
-    salutation: "Dear You,",
+    salutation: "My Diamond Angel 💎🪽,",
     paragraphs: [
       "Namma friendship eppadi start aachunu yosicha, adhu romba simple-a dhaan irundhuchu.",
       "College-la meet pannom. Class-la serndhu sirichom. Small small memories create pannom.",
@@ -255,7 +255,7 @@ export const storyData = {
     line1: "Some people change your life without even realizing it.",
     line2: "You are one of those people.",
     line3: "I may not know what to call what we have...\n\nbut I know I'm grateful that I found you.",
-    finalLine: "❤️ Thank you for being part of my story. 👋 Ta Ta . . . .",
+    finalLine: "❤️ Thank you for being part of my story.👋 Ta Ta . . . .",
     replayButton: "Replay Our Story ↻"
   }
 };
