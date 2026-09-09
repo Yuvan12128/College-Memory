@@ -66,7 +66,7 @@ export const storyData = {
         id: 1,
         tag: "Memory 01",
         title: "That Food",
-        text: "One day nee enakku food kondu vandhu kudutha.\n\nAdhu romba simple-aana moment dhaan...\nbut somehow, I still remember it.",
+        text: "One day namba ouppuma senjom .\n\nAdhu romba simple-aana moment dhaan...\nbut somehow, I still remember it.",
         image: "./images/chat-food.jpg"
       },
       {
@@ -185,7 +185,12 @@ export const storyData = {
         num: "06",
         title: "The Little Things",
         text: "Sometimes the smallest things you do become the memories I remember the most."
-      }
+      },
+      {
+        num: "07",
+        title: "Food 🍲",
+        text: "Murungai sambar, white rice, and beetroot poriyal — a simple meal that became a memorable little moment.❤️"
+      } 
     ]
   },
 
