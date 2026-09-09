@@ -190,7 +190,12 @@ export const storyData = {
         num: "07",
         title: "Food 🍲",
         text: "Murungai sambar, white rice, and beetroot poriyal — a simple meal that became a memorable little moment.❤️"
-      } 
+      },
+      {
+        num: "08",
+        title: "Your Dreams 🌟",
+        text: "You once said you wanted to go on a long trip on a Bullet bike after marriage. I truly hope this little wish of yours comes true someday. May you get to live this beautiful dream.” ❤️"
+      }
     ]
   },
 
