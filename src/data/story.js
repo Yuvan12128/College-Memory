@@ -31,25 +31,25 @@ export const storyData = {
     timeline: [
       {
         step: "01",
-        title: "Class Fun & Memories",
+        title: "Class Fun & Memories 🤭",
         desc: "Laughter between lectures, teasing, and memories right in front of the board.",
         image: "./images/classroom-together.png"
       },
       {
         step: "02",
-        title: "Friendship",
-        desc: "Beyond study notes, talking about everything and nothing.",
+        title: "Friendship 📸",
+        desc: "Bus-la nee notice pannama, naan edutha oru little photo… unakku theriyama capture aana oru simple memory.",
         image: "./images/bus-mirror.jpg"
       },
       {
         step: "03",
-        title: "More Conversations",
+        title: "More Conversations 📱",
         desc: "Conversations that naturally carried past college hours.",
         image: "./images/chat-padips.jpg"
       },
       {
         step: "04",
-        title: "More Memories",
+        title: "More Memories ✨",
         desc: "Realizing you had quietly become someone irreplaceable.",
         image: "./images/selvi-smile.jpg"
       }
@@ -65,35 +65,35 @@ export const storyData = {
       {
         id: 1,
         tag: "Memory 01",
-        title: "That Food",
+        title: "That Food 🥣👩‍🍳",
         text: "One day namba ouppuma senjom .\n\nAdhu romba simple-aana moment dhaan...\nbut somehow, I still remember it.",
         image: "./images/chat-food.jpg"
       },
       {
         id: 2,
         tag: "Memory 02",
-        title: "Ice Cream",
+        title: "Ice Cream 🍦",
         text: "Small thing...\nbut it became another little memory.",
         image: "./images/chat-icecream.jpg"
       },
       {
         id: 3,
         tag: "Memory 03",
-        title: "The Birthday Frame",
-        text: "A special digital frame with roses & memories crafted for Kalaiselvi.\n\nPerusa edhuvum illa...\nbut somehow those small things became special memories.",
+        title: "The Birthday Frame 🎂",
+        text: "A special digital frame with roses & memories crafted for Kalaiselvi.\n\nSomehow those small things became special memories.",
         image: "./images/birthday-frame-hd.png"
       },
       {
         id: 4,
         tag: "Memory 04",
-        title: "Just 'Selvi'",
-        text: "“Kalaiselvi... Selvi...”\n\nThe way a name is called with care turns an ordinary word into pure affection.",
+        title: "Just 'Selvi' 🌸",
+        text: "Naan en friend baby-kku oru name vaikkanum-nu sonnen… nee naan nenacha athe name-ah apdiye sollitta. Andha little coincidence romba memorable-ah irundhuchu.",
         image: "./images/chat-name.jpg"
       },
       {
         id: 5,
         tag: "Memory 05",
-        title: "Handwritten Card",
+        title: "Handwritten Card 💌",
         text: "Kalai's handwritten card marking June 24 on the calendar.\n\nPenned down with pure sincerity that digital words can never match.",
         image: "./images/kalai-letter.jpg"
       }
@@ -106,7 +106,7 @@ export const storyData = {
     title: "The Calls That Became Memories",
     leadText: "College-la pesunadhu mattum illa...\n\nVeetukku pona pinnadiyum namma conversations continue aachu.\n\nOru call start pannina, eppadi time pogudhunu theriyama rendu perum pesittu iruppom.\n\nThose calls slowly became some of my favourite memories.",
     callerName: "Kalai",
-    callDuration: "1 hr 42 mins"
+    callDuration: "3 hr 28 mins"
   },
 
   // 05 — YOU WERE THERE (EMOTIONAL ANCHOR)
@@ -158,32 +158,32 @@ export const storyData = {
     cards: [
       {
         num: "01",
-        title: "Your Smile",
+        title: "Your Smile 😄",
         text: "Nee eppovume smile pannittu irukkuradhu enakku romba pidikkum."
       },
       {
         num: "02",
-        title: "Your Simplicity",
-        text: "Nee simple-ah dress pannikkuradhu enakku romba pidikkum."
+        title: "Your Simplicity 🕊️",
+        text: "Nee simple-ah dress pannikkuradhu enakku romba pidikkum with hair style."
       },
       {
         num: "03",
-        title: "The Way You Think",
+        title: "The Way You Think 💭",
         text: "Nee enna madhiriye yosikkura. Sometimes ennoda thought process-a vida fast-ah yosikkura maadhiri irukkum."
       },
       {
         num: "04",
-        title: "Your Trust",
+        title: "Your Trust 🔐",
         text: "Unakku yedhavadhu problem na, en kitta edhuvum maraikkama share pannuva. And that trust means a lot to me."
       },
       {
         num: "05",
-        title: "Your Kindness",
+        title: "Your Kindness 🤍",
         text: "Unakku mudinja alavukku others-ku help panna try pannura."
       },
       {
         num: "06",
-        title: "The Little Things",
+        title: "The Little Things 💡",
         text: "Sometimes the smallest things you do become the memories I remember the most."
       },
       {
@@ -238,7 +238,7 @@ export const storyData = {
     line1: "Some people change your life without even realizing it.",
     line2: "You are one of those people.",
     line3: "I may not know what to call what we have...\n\nbut I know I'm grateful that I found you.",
-    finalLine: "Thank you for being part of my story. ❤️",
+    finalLine: "Thank you for being part of my story. ❤️  Ta Ta . . . . ",
     replayButton: "Replay Our Story ↻"
   }
 };
