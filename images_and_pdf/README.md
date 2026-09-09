@@ -18,3 +18,4 @@ All story images and documents have been neatly arranged in chronological memory
 | **12** | `12_Kalai_Handwritten_Letter.pdf` | Chapter 05: Original Handwritten PDF Letter | `Document 20.pdf` | Document 20.pdf |
 | **13** | `13_Kalai_Handwritten_Letter.jpg` | Chapter 05: Handwritten Card Image | `kalai-letter.jpg` | Keepsake Letter Image |
 | **14** | `14_College_Friends.jpg` | College Group Friends Photo | `college-friends.jpg` | College Friends |
+| **15** | `15_Kalai_Hall_Ticket.jpg` | MCA Entrance Exam Hall Ticket (Dhanalakshmi Srinivasan) | `IMG-20260909-WA0011.jpg` | 2025-07-26 |

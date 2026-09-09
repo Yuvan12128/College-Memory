@@ -65,34 +65,41 @@ export const storyData = {
       {
         id: 1,
         tag: "Memory 01",
+        title: "The Hall Ticket 🎫",
+        text: "Kalai-oda MCA Common Entrance Test Hall Ticket — 26.07.2025.\n\nExam tense, Dhanalakshmi Srinivasan College centre… First Time Paththan. 🎓✨",
+        image: "./images/hall-ticket.jpg"
+      },
+      {
+        id: 2,
+        tag: "Memory 02",
         title: "That Food 🥣👩‍🍳",
         text: "One day namba ouppuma senjom .\n\nAdhu romba simple-aana moment dhaan...\nbut somehow, I still remember it.",
         image: "./images/chat-food.jpg"
       },
       {
-        id: 2,
-        tag: "Memory 02",
+        id: 3,
+        tag: "Memory 03",
         title: "Ice Cream 🍦",
         text: "Small thing...\nbut it became another little memory.",
         image: "./images/chat-icecream.jpg"
       },
       {
-        id: 3,
-        tag: "Memory 03",
+        id: 4,
+        tag: "Memory 04",
         title: "The Birthday Frame 🎂",
         text: "A special digital frame with roses & memories crafted for Kalaiselvi.\n\nSomehow those small things became special memories.",
         image: "./images/birthday-frame-hd.png"
       },
       {
-        id: 4,
-        tag: "Memory 04",
+        id: 5,
+        tag: "Memory 05",
         title: "Just 'Selvi' 🌸",
         text: "Naan en friend baby-kku oru name vaikkanum-nu sonnen… nee naan nenacha athe name-ah apdiye sollitta. Andha little coincidence romba memorable-ah irundhuchu.",
         image: "./images/chat-name.jpg"
       },
       {
-        id: 5,
-        tag: "Memory 05",
+        id: 6,
+        tag: "Memory 06",
         title: "Handwritten Card 💌",
         text: "Kalai's handwritten card marking June 24 on the calendar.\n\nPenned down with pure sincerity that digital words can never match.",
         image: "./images/kalai-letter.jpg"
@@ -194,7 +201,12 @@ export const storyData = {
       {
         num: "08",
         title: "Your Dreams 🌟",
-        text: "You once said you wanted to go on a long trip on a Bullet bike after marriage. I truly hope this little wish of yours comes true someday. May you get to live this beautiful dream.” ❤️"
+        text: "You once said you wanted to go on a Ladakh trip on a Bullet bike after marriage. I truly hope this little wish of yours comes true someday. May you get to live this beautiful dream. ❤️"
+      },
+      {
+        num: "09",
+        title: "A Comfortable Ride 🚙",
+        text: "College function-kku en kooda car-la vandha andha journey, nee romba comfortable-ah irundhadhu enakku oru memorable moment. Aana andha naal unakku food vaangi thara mudiyala… adhukku really sorry. Appove unakku edhavadhu vaangi thandhirukkanum-nu ippo ninaikkiren. 🥺"
       }
     ]
   },
