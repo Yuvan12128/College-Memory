@@ -209,9 +209,9 @@ export const storyData = {
         text: "College function-kku en kooda car-la vandha andha journey, nee romba comfortable-ah irundhadhu enakku oru memorable moment. Aana andha naal unakku food vaangi thara mudiyala… adhukku really sorry. Appove unakku edhavadhu vaangi thandhirukkanum-nu ippo ninaikkiren. 🥺"
       },
       {
-        num:"10",
-        title:"That Song 🎶",
-        text:"Oru naal nee ‘Honny Honny’ song paadi enakku send pannina… honestly, romba nalla irundhuchu. Nee paadina way romba nice-ah irundhuchu 🤍..."
+        num: "10",
+        title: "That Song 🎶",
+        text: "Oru naal nee ‘Honny Honny’ song paadi enakku send pannina… honestly, romba nalla irundhuchu. Nee paadina way romba nice-ah irundhuchu 🎤..."
       }
     ]
   },
